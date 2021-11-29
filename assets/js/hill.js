@@ -266,7 +266,7 @@ function visualizeTextCreationDecryption(inputText, inputTextMatrix, inputNumeri
   for(let i = 0; i < inputTextMatrix.length; ++i) {
     visualizeText += `${inputTextMatrix[i][0]}${inputTextMatrix[i][1]}${inputTextMatrix[i][2]}`;
   }
-  visualizeText += '\n\n\n(Original Text & Indices) Matrix :-\n\n';
+  visualizeText += '\n\n\n(Cipher Text & Indices) Matrix :-\n\n';
   for(let i = 0; i < inputTextMatrix.length; ++i) {
     visualizeText += `|\t\t ${inputTextMatrix[i][0]}\t\t ${inputTextMatrix[i][1]}\t\t ${inputTextMatrix[i][2]}\t\t|\t\t =\t\t|\t\t ${inputNumericMatrix[i][0]}\t\t ${inputNumericMatrix[i][1]}\t\t ${inputNumericMatrix[i][2]}\t\t|\n`;
   }
