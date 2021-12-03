@@ -32,9 +32,9 @@ html {
 
   .output {
     width: 97%;
-    overflow-y: hidden;
+    /* overflow-y: hidden;
     overflow-x: auto;
-    white-space: nowrap;
+    white-space: nowrap; */
     display: none;
     padding-top: 100px;
    
@@ -83,6 +83,8 @@ html {
 
     font-size: 30px;
     font-weight: bolder;
+    width: 460px;
+    word-wrap: break-word;
 
 }
 
@@ -179,6 +181,14 @@ html {
     margin-bottom: 0px;
 }
 
+.page-banner-rail .output {
+    padding-top: 60px;
+}
+
+.page-banner-hill .output{
+    padding-top: 70px;
+}
+
 
 @media (min-width: 768px) {
     .page-banner-hill .home-banner {
@@ -189,19 +199,31 @@ html {
 
   @media (min-width: 768px) {
     .page-banner-rail .home-banner {
-      height: 500px;
+      height: 550px;
     }
   }
 
 
   @media only screen and (max-width: 768px) {
 
+    #trans-padding{
+        height: 600px;
+    }
+
+    #playfair-padding{
+        height: 640px;
+    }
+
+    #vigenere-padding{
+        height: 570px;
+    }
+
     .page-banner.home-banner{
-        height: 700px;
+        height: 550px;
     }
 
     .page-banner-hill.home-banner{
-        height: 750px;
+        height: 700px;
     }
     .inputText{
         width: 150px;
@@ -217,10 +239,13 @@ html {
       
     }
 
+    .page-banner-rail {
+        height: 600px;
+      }
 
-
- 
-
+      .page-banner-rail .output {
+        padding-top: 40px;
+    }
 
 
   
